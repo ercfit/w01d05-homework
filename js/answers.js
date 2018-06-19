@@ -304,6 +304,170 @@ const thomsCloset = [
 // 9. Get more specific about what kind of PJs Thom's wearing this winter. Modify the name of his PJ pants to `Footie Pajamas`.
 	//(thomsCloset[0,1][2] = "Footie Pajamas");
 
+//Functions
+
+
+//printGreeting
+
+// Write a function called `printGreeting` with a parameter `name` that returns a greeting with the argument **interpolated** into the greeting.
+
+// console.log(printGreeting("Slimer"));
+// > => Hello there, Slimer!
+
+// function printGreeting(name){
+// 	console.log(`Hello there,${name}!`);
+// }
+// printGreeting("Slimer");
+
+
+// reverseWordOrder 
+
+// Write a function `reverseWordOrder` that accepts a single argument, a string. The function should return a string with the order of the words reversed. Don't worry about punctuation.
+// console.log(reverseWordOrder("Ishmael me Call"));
+// > => "Call me Ishmael"
+
+//Ryan went over part of this in class with us.  I understand the logic, but I'm still missing pieces.  I shall return. Moving on...
+	// function reverseWordOrder(string){
+	// 	words = []; //empty array to hold words
+	// 	let message = "Welcome Home Lisa";
+	// 	for (i = 0; i < message.length; i++){ //loop through each index in the message and add one to the counter, if letter at the index is not equal to an empty string (space) the letters at the index equal the current word.
+	// 		if (message[i] != " "){
+	// 			currentWord = "";
+	// 			currentWord += message[i];
+	// 				}else{
+	// 				//else push the current letter at that index (the space to the empty array words)
+	// 			words.push(currentWord);
+	// 		}			
+	// 	}				
+	// };
+	// console.log(reverseWordOrder("Call me Ishmael"));
+
+// console.log(reverseWordOrder("I use Lâncome on my comb"));
+// > => "comb my on Lâncome use I"
+
+//***same as above, moving on--will revisit when caught up
+
+// ### calculate
+
+// Write a function called `calculate`.
+
+// This function should take three arguments, two numbers and a string.
+
+// Name the parameters `num1`, `num2`, and `operation`.
+
+// If the function receives the string "add" for the operation parameter, it will return the sum of num1 and num2.
+
+// If the function receives the string "sub" for the operation parameter, it will return num1 minus num2.
+
+// Do the same thing for multiplication "mult", division "div", and exponent "exp" (where num2 is the exponent of num1).
+
+// ```javascript
+// console.log(calculate(4, 3, "sub"));
+
+// => 1
+// ```
+
+// ```javascript
+// console.log(calculate(4, 3, "exp"));
+
+// => 64
+// ```
+
+// <br>
+// <hr>
+
+
+// # 1 
+
+// Write a function `printCool` that accepts one parameter, `name` as an argument. The function should print the name and a message saying that that person is cool.
+
+// ```javascript
+// console.log(printCool("Captain Reynolds"));
+// ```
+
+// > => "Captain Reynolds is cool";
+
+// # 2
+
+// Write a function `calculateCube` that takes a single number and prints the volume of a cube made from that number.
+
+// ```javascript
+// console.log(calculateCube(5));
+// ```
+
+// > => 125
+
+
+// # 3
+
+// Write a function `isAVowel` that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case.
+
+// ```javascript
+// console.log(isAVowel("a"));
+// ```
+
+// > => true
+
+
+// # 4
+
+// Write a function `getTwoLengths` that accepts two parameters (strings). The function should return an _array_ of numbers where each number is the length of the corresponding string.
+
+// ```javascript
+// console.log(getTwoLengths("Hank", "Hippopopalous"));
+// ```
+
+// > => [4, 13]
+
+
+// # 5 
+
+// Write a function `getMultipleLengths` that accepts a single parameter as an argument: an **array** of **strings**. The function should return an array of **numbers** where each number is the length of the corresponding string.
+
+
+// ```javascript
+// console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+// ```
+
+// > => [5, 4, 2, 2, 4]
+
+
+// # 6
+
+// Define a function `maxOfThree` that takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned.
+
+// ```javascript
+// console.log(maxOfThree(6, 9, 1));
+// ```
+
+// > => 9
+
+
+// # 7
+
+// Write a function `printLongestWord` that accepts a single argument, an **array** of **strings**. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
+
+// ```javascript
+// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+// ```
+
+// > => "Peanutbutter"
+
+
+// # 8
+
+// Write a Javascript function called `transmogrify`. This function should accept three arguments, which you can assume will be numbers. Your function should return the "transmogrified" result.
+
+// The transmogrified result of three numbers is the product of the first two numbers, raised to the power of the third number.
+
+// For example, the transmogrified result of 5, 3, and 2 is `(5 times 3) to the
+// power of 2` is 225.
+
+// ```javascript
+// console.log(transmogrify(5, 3, 2));
+// ```
+
+// > => 225
 
 
 
