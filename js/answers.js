@@ -250,34 +250,34 @@
 
 
 
-const kristynsCloset = [
-						  "left shoe",
-						  "cowboy boots",
-						  "right sock",
-						  "GA hoodie",
-						  "green pants",
-						  "yellow knit hat",
-						  "marshmallow peeps"
-						];
+// const kristynsCloset = [
+// 						  "left shoe",
+// 						  "cowboy boots",
+// 						  "right sock",
+// 						  "GA hoodie",
+// 						  "green pants",
+// 						  "yellow knit hat",
+// 						  "marshmallow peeps"
+// 						];
 
-const thomsCloset = [
-					  [// These are Thom's shirts
-					    "grey button-up",
-					    "dark grey button-up",
-					    "light blue button-up",
-					    "blue button-up",
-					  ],
-					  [// These are Thom's pants
-					    "grey jeans",
-					    "jeans",
-					    "PJs"
-					  ],
-					  [// Thom's accessories
-					    "wool mittens",
-					    "wool scarf",
-					    "raybans"
-					  ]
-					];
+// const thomsCloset = [
+// 					  [// These are Thom's shirts
+// 					    "grey button-up",
+// 					    "dark grey button-up",
+// 					    "light blue button-up",
+// 					    "blue button-up",
+// 					  ],
+// 					  [// These are Thom's pants
+// 					    "grey jeans",
+// 					    "jeans",
+// 					    "PJs"
+// 					  ],
+// 					  [// Thom's accessories
+// 					    "wool mittens",
+// 					    "wool scarf",
+// 					    "raybans"
+// 					  ]
+// 					];
 	
 // 1. What's Kristyn wearing today? Using bracket notation to access items in `kristynsCloset`, log the sentence "Kristyn is rocking that " + *the third item in Kristyn's closet* + " today!" to the console.
 	//console.log(`Kristyn is rocking that ${kristynsCloset[2]} today!`);
@@ -350,85 +350,107 @@ const thomsCloset = [
 // ### calculate
 
 // Write a function called `calculate`.
-
+	
 // This function should take three arguments, two numbers and a string.
 
 // Name the parameters `num1`, `num2`, and `operation`.
-
+	
 // If the function receives the string "add" for the operation parameter, it will return the sum of num1 and num2.
-
+	
 // If the function receives the string "sub" for the operation parameter, it will return num1 minus num2.
 
 // Do the same thing for multiplication "mult", division "div", and exponent "exp" (where num2 is the exponent of num1).
 
-// ```javascript
-// console.log(calculate(4, 3, "sub"));
 
-// => 1
-// ```
+// 	function calculate(num, num, str){
+// 		function operation(add){
+// 			num1 + num2};
+// 		function operation(sub){
+// 			num1 - num2};
+// 		function operation(mult){
+// 			 num1 * num2};
+// 		function operation(div){
+// 			num1 / num2};
+// 		function operation(exp){
+// 			 Math.pow(num1,num2);
+// 	}
+// calculate.operation.add(5,5)
 
-// ```javascript
-// console.log(calculate(4, 3, "exp"));
-
-// => 64
-// ```
-
-// <br>
-// <hr>
-
+//**This does not work, I would like to review it with Ryan.
 
 // # 1 
-
 // Write a function `printCool` that accepts one parameter, `name` as an argument. The function should print the name and a message saying that that person is cool.
 
-// ```javascript
-// console.log(printCool("Captain Reynolds"));
-// ```
-
-// > => "Captain Reynolds is cool";
+	// function printCool(name){
+	// 	console.log(`${name} is cool`);
+	// }
+	// printCool("Erica");
 
 // # 2
-
 // Write a function `calculateCube` that takes a single number and prints the volume of a cube made from that number.
-
-// ```javascript
 // console.log(calculateCube(5));
-// ```
-
 // > => 125
-
+	// function calculateCube(num){
+	// 	console.log(num * 3);
+	// }
+	// calculateCube(5);	
 
 // # 3
-
 // Write a function `isAVowel` that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise. The vowel could be upper or lower case.
-
-// ```javascript
 // console.log(isAVowel("a"));
-// ```
-
 // > => true
 
+// 	function isAVowel(str){
+//   		if (str.length == 1){
+// 	    let vowels = new Array('a','e','i','o','u');
+// 	    let isAVowel = false;
 
+// 	    for(counter in vowels){
+// 	      if(vowels[counter] == str){
+// 	        isAVowel = true;
+// 	      }
+// 	    }
+// 	    return isAVowel;
+// 	  }
+// 	}
+
+// isAVowel("a");
+//credit stack overflow: I understand the logic but was trying to run it with || and &&
+
+	
 // # 4
 
 // Write a function `getTwoLengths` that accepts two parameters (strings). The function should return an _array_ of numbers where each number is the length of the corresponding string.
-
-// ```javascript
 // console.log(getTwoLengths("Hank", "Hippopopalous"));
-// ```
-
 // > => [4, 13]
 
+// function getTwoLengths(str1, str2){
+// 	//write a function, that accepts 2 strings
+// 	arrayOfNumbers = [];
+// 	x = str1.length; 
+// 	y = str2.length;
+			
+// 	arrayOfNumbers.push(x,y);
+// 	console.log(arrayOfNumbers);
+// }
+// getTwoLengths('red', 'blue');
 
 // # 5 
 
 // Write a function `getMultipleLengths` that accepts a single parameter as an argument: an **array** of **strings**. The function should return an array of **numbers** where each number is the length of the corresponding string.
+// function getMultipleLengths([str1, str2, str3, str4, str5]){
+// 	arrayOfNumbers = [];
+// 		x = str1.length; ß
+// 		y = str2.length;
+// 		z = str3.length;
 
+// 		arrayOfNumbers.push(x,y,z);
+// 	console.log(arrayOfNumbers);
+// }
+// 	getMultipleLengths(["hello", "what", "is", "up", "dude"]);
 
-// ```javascript
+			
 // console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
-// ```
-
 // > => [5, 4, 2, 2, 4]
 
 
@@ -436,22 +458,41 @@ const thomsCloset = [
 
 // Define a function `maxOfThree` that takes three numbers as arguments and returns the largest of them. If all numbers are the same, it doesn't matter which one is returned. If the two largest numbers are the same, one of them should be returned.
 
-// ```javascript
 // console.log(maxOfThree(6, 9, 1));
-// ```
-
 // > => 9
+//maxOfThree(6, 9, 1);
+
+
+// function maxOfThree(num1, num2, num3){
+// 	if ((num1 > num2) && (num1 > num3))
+// 		console.log(num1);
+// 		else if ((num2 > num1) && (num2 > num3))
+// 			console.log(num2);
+// 		else if ((num3 > num1) && (num3 > num2))
+// 			console.log(num3);
+// 	}
+// 	console.log(maxOfThree(6, 9, 1));
+	
+
+
 
 
 // # 7
 
 // Write a function `printLongestWord` that accepts a single argument, an **array** of **strings**. The method should return the longest word in the array. In case of a tie, the method should return the word that appears first in the array.
-
-// ```javascript
 // console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
-// ```
-
 // > => "Peanutbutter"
+
+		// function printLongestWord([str1, str2, str3]){
+		// 	if ((str1 > str2) && (str1 > str3))
+		// 		console.log(str1);
+		// 	else if ((str2 > str1) && (str2 > str3))
+		// 		console.log(str2);
+		// 	else if ((str3 > str1) && (str3 > str2))
+		// 		console.log(str3);
+
+		// }
+		// console.log(printLongestWord(["BoJack", "Princess", "Diane"]));
 
 
 // # 8
@@ -470,33 +511,106 @@ const thomsCloset = [
 // > => 225
 
 
+// function transmogrify(num1, num2, num3){
+// 	console.log(Math.pow((num1 * num2), num3));
+
+// }
+// console.log(transmogrify(5, 3, 2));
+
+// ### Objects
+
+// ## Syntax
+
+// List and describe each individual piece of syntax that we use to construct an object. Don't leave anything out! The list is finite.
+
+	//curly braces - like a code block
+	//commas - between elements
+
+// ## Me
+
+// 1. Create an empty object called `me`.
+// // 2. Assign it properties for **name**, **age**, and **email** with corresponding values.
+// 		const me = {
+// 			name: "Erica",
+// 			age: 38,
+// 			email: "ercfit@gmail.com",
+// 			placeOfResidence: "Springfield, IL"
+// 		};
+
+// 		console.log(me);
 
 
 
+// // 3. Using dot notation, access the **name** property in your object.
 
+// 	console.log(me.name);
 
+// // 4. Without writing directly into the object, update the value of **age** to be 1000 years old.
 
+// 	console.log(me.age = 1000);
 
+// // 5. Using dot notation, verify that **age** has been updated.
+// 	console.log(me.age);
 
+// // 6. Add a key to this object called: "place of residence" and give it a value of your hometown. Note that the key has spaces, therefore you cannot use dot notation.
+// //6. Access the value of "place of residence"
 
+	//console.log(me.placeOfResidence);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ## Slimer
 
 //
+// const monster = {
+//    name: "Slimer",
+//    color: "greenish",
+//    type: "plasm or ghost or something",
+//    age: 6
+// }
+// // ```
+
+// // * Given the **slimer** object:
+// //     - What would you write to access the `name` and console.log it?
+// 			console.log(monster.name);
+// //     - What would you write to change the `type` to 'creature' (without changing it inside the object)
+// 			console.log(monster.type = "creature");
+
+// //     - What would you write to add a key to the object called `age`, and set the age to 6?
+// 			console.log(monster.age = 6);
+// //     - console.log the object to make sure `type` is creature, and `age` is 6
+// 				console.log(monster.type);
+// 				console.log(monster.age);
+
+
+// ## Ogres
+
+// Let's say you want to make an adventure game where you are an adventurer and you are going to fight **ogres**.
+
+// Using **objects**, create **models** and have them interact.
+
+// * how would you model your `adventurer`? Your adventurer will want a **name** and **hitpoints**. What else would your adventurer need?
+// 		const adventurer = {
+// 							name: "Thom",
+// 							hitpoints: 3,
+// 							weapon: "sword"
+// 		};
+// // * how would you model an `ogre`? Your ogre will want **hitpoints**.
+// 		const ogre = {
+// 			name: "Misunderstood",
+// 			hitpoints: 5,
+// 			weapon: "wit"
+// 		};
+
+// // // * Write a very small program that will simulate a battle between your adventurer and an ogre. 
+// 		function attack(attacker, victim){
+// 				console.log(`${JSON.stringify(attacker)} is attacking ${JSON.stringify(victim)}.`);
+// 				victim.hitpoints--;
+				
+// 	}	//***the JSON.stringify is giving me the entire object--not just the object name?!?!?
+// attack(ogre.name, adventurer.name);
+
+
+// 	* When your adventurer's hitpoints reach 0 the game is over.
+
+// 	* When your ogre's hitpoints reach 0 the game is over.
+
+// * If you want to provide input to the game, you can run it in the Chrome console (but that isn't strictly necessary for now).
